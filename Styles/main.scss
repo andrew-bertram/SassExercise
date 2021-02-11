@@ -4,16 +4,27 @@
 // 1
 .main {
     background: tan;
+    // BONUS 3
+    h4 {
+        display: none;
+    }
+    @include flex (space-between, center)
     // 3
     h1 {
         color: #ddd;
+        // BONUS 1
+        &:hover {
+            text-decoration: underline;
+            text-align: center;
+            padding: 20px;
+        }
     }
     // 7
     h2 {
-        color: $brown1;
+        background-color: $brown1;
     }
     h3 {
-        color: $brown1;
+        background-color: $brown1;
     }
 }
 
@@ -22,9 +33,12 @@
     background: silver;
     // 9
     h1 {
+        @include flex ()
         text-decoration: underline;
         // 12
         @extend %center;
+        // BONUS 2
+        margin-bottom: 25px * 4;
     }
     // 10
     h2 {

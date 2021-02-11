@@ -6,3 +6,10 @@ $brown1: #964b00;
     text-align: center;
     padding: 20px;
 }
+
+// BONUS 3
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-content: $align;
+}
